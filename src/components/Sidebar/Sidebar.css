@@ -46,3 +46,31 @@
     background-color: #1a1a1a;
 }
 
+.sale_dropdown{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    color: white;
+}
+
+
+.sale_dropdown_tab{
+    width: 17vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #262626;
+    cursor: pointer;
+}
+
+.sale_dropdown_tab:hover{
+    color: #737373;
+}
+
+.sale_dropdown_tab > p{
+    margin-left: 5vw;
+}
+
+.remove_dropdown{
+    display: none;
+}
