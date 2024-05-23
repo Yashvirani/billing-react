@@ -60,8 +60,17 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: #262626;
+    cursor: pointer;
+}
+
+.sale_dropdown_tab:hover{
+    color: #737373;
 }
 
 .sale_dropdown_tab > p{
     margin-left: 5vw;
+}
+
+.remove_dropdown{
+    display: none;
 }
