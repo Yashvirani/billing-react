@@ -19,6 +19,7 @@ function Sidebar() {
          <Avatar />
          <p style={{marginLeft : '1vw'}}>Company</p>
       </div>
+     
       <div className='side_function'>
          <HomeIcon />
          <p style={{marginLeft : '1vw'}}>Home</p>
@@ -34,6 +35,27 @@ function Sidebar() {
       <div className='side_function'>
          <ReceiptIcon />
          <p style={{marginLeft : '1vw'}}>Sale</p>
+      </div>
+      <div className='sale_dropdown'>
+         <div className='sale_dropdown_tab'>
+           <p>Sale Invoices</p>
+         </div>
+         <div className='sale_dropdown_tab'>
+           <p>Estimate/Quotation</p>
+         </div>
+         <div className='sale_dropdown_tab'>
+           <p>Payment In</p>
+         </div>
+         <div className='sale_dropdown_tab'>
+            <p>Sale Order</p>
+         </div>
+         <div className='sale_dropdown_tab'>
+            <p>Delivery Challan</p>
+         </div>
+         <div className='sale_dropdown_tab'>
+             <p>Credit Note</p>
+         </div>
+         
       </div>
       <div className='side_function'>
          <ShoppingCartIcon />
