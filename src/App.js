@@ -3,6 +3,7 @@ import axios from 'axios';
 import react , {useState} from 'react';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import SignIn from './Screens/SignIn';
+import Sidebar from './components/Sidebar/Sidebar.js';
 
 function App() {
   
@@ -11,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="billing">
         <Routes>
-          <Route path="/" Component={SignIn} />
+          <Route path="/" Component={Sidebar} />
         </Routes>
       </div>
     </BrowserRouter>
