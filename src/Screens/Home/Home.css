@@ -1,0 +1,39 @@
+.home{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home_right{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_right_bottom{
+    flex : 0.89;
+    height: 100%;
+    background-color:   #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_right_bottom_1{
+    width: 81.5vw;
+    flex: 0.3;
+    background-color: white;
+    margin-top: 3vh;
+    
+}
+
+.home_right_bottom_2{
+    width: 81.5vw;
+    flex: 0.7;
+    background-color: white;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
