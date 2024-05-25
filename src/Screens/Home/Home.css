@@ -27,6 +27,7 @@
     flex: 0.3;
     background-color: white;
     margin-top: 3vh;
+    border-radius: 8px;
     
 }
 
@@ -36,4 +37,93 @@
     background-color: white;
     margin-top: 3vh;
     margin-bottom: 3vh;
+    border-radius: 8px;
+}
+
+.home_right_bottom_1-1{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+    width: 10vw;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    width: 16vw;
+    height : 6vh;
+    font-size: 2vh;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list{
+    width: 16vw;
+    height : 25vh
+}
+
+/* .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+    font-size: 2vh;
+}
+
+.MuiButtonBase-root .MuiMenuItem-root .MuiMenuItem-gutters .MuiMenuItem-root .MuiMenuItem-gutters .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+    font-size: 2vh;
+} */
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    font-size: 2vh;
+}
+
+.home_right_bottom_1-1-left{
+    display: flex;
+    width: 40vw;
+}
+
+.home_right_bottom_1-1-right{
+    display: flex;
+    width: 20vw;
+    justify-content: right;
+}
+
+.graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7vh;
+    margin-right: 1vw;
+}
+
+.home_right_bottom_1-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.css-19rs3d7{
+    margin-left: 5vw;
+    margin-top: 4vh;
+}
+
+.css-az8st9-MuiDataGrid-root .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell{
+    display: flex;
+    justify-content: center;
+}
+
+.css-az8st9-MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.css-128fb87-MuiDataGrid-toolbarContainer{
+    /* background-color: #404040; */
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+    color: white;
 }
