@@ -5,12 +5,69 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { IconButton } from '@mui/material';
+import { IconButton, LinearProgress } from '@mui/material';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import PrintIcon from '@mui/icons-material/Print';
+import Box from '@mui/material/Box';
+import { DataGrid , GridToolbar , GridColDef } from '@mui/x-data-grid';
 
 import "./Home.css";
+
+const columns = [
+  { field: 'id', headerName: 'ID', width: 90 },
+  {
+    field: 'firstName',
+    headerName: 'First name',
+    width: 150,
+  },
+  {
+    field: 'lastName',
+    headerName: 'Last name',
+    width: 150,
+  },
+  {
+    field: 'lastName',
+    headerName: 'Last name',
+    width: 150,
+  },
+  {
+    field: 'lastName',
+    headerName: 'Last name',
+    width: 150,
+  },
+  {
+    field: 'lastName',
+    headerName: 'Last name',
+    width: 150,
+  },
+  {
+    field: 'age',
+    headerName: 'Age',
+    type: 'number',
+    width: 110,
+  },
+  // {
+  //   field: 'fullName',
+  //   headerName: 'Full name',
+  //   description: 'This column has a value getter and is not sortable.',
+  //   sortable: false,
+  //   width: 160,
+  //   valueGetter: (value, row) => `${row.firstName || ''} ${row.lastName || ''}`,
+  // },
+];
+
+const rows = [
+  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 14 },
+  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 31 },
+  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 31 },
+  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 11 },
+  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
+  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
+  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+];
 
 function Home() {
   const [age, setAge] = React.useState('');
@@ -46,8 +103,22 @@ function Home() {
                           </Select>
                         </FormControl>
                        
-                        <input type='date' style={{marginRight: '1vw',width : '14vw'}}></input>
-                        <input type='date' style={{marginRight: '1vw',width : '14vw'}}></input>
+                        <input type='date' 
+                               style={{marginRight: '1vw',
+                                       width : '14vw',
+                                       fontSize : '1.9vh',
+                                       paddingLeft : '1vw',
+                                       paddingRight : '1vw'
+                                      }}>
+                        </input>
+                        <input type='date'
+                                style={{marginRight: '1vw',
+                                width : '14vw',
+                                fontSize : '1.9vh',
+                                paddingLeft : '1vw',
+                                paddingRight : '1vw'
+                               }}>
+                        </input>
                     </div>
                     <div className='home_right_bottom_1-1-right'>
                         <div className='graph'>
@@ -76,7 +147,42 @@ function Home() {
                 </div>
              </div>
              <div className='home_right_bottom_2'>
-
+                <Box sx={{ height: '50vh',
+                           width: '95%',
+                           marginLeft : '2vw' ,
+                           marginRight : '2vw',
+                           marginTop : '3vh',
+                          //  marginBottom : '2vh'
+                          // objectFit : 'contain'
+                          overflowY : 'scroll'
+                          }}>
+                  <DataGrid
+                    rows={rows}
+                    columns={columns}
+                    initialState={{
+                      pagination: {
+                        paginationModel: {
+                          pageSize: 5,
+                        },
+                      },
+                    }}
+                    pageSizeOptions={[5]}
+                    // checkboxSelection
+                    disableRowSelectionOnClick
+                    slots={{
+                      toolbar : GridToolbar,
+                      loadingOverlay : LinearProgress
+                    }}
+                    slotProps={{
+                      toolbar : {
+                        showQuickFilter : true,
+                        quickFilterProps : {
+                          debounceMs : 500
+                        }
+                      }
+                    }}
+                  />
+                </Box>
              </div>
           </div>
       </div>
